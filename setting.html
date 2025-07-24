@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | FUOYE</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container">
+            <h2 class="log">FUOYE-Media</h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search settings..." />
+            </div>
+            <div class="create">
+                <div class="profile-photo">
+                    <img src="asset/VC.png" alt="profile" />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- LEFT SIDEBAR -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="asset/VC.png" alt="" />
+                    </div>
+                    <div class="handle">
+                        <h4>Prof. Yomi</h4>
+                        <p class="text-muted">@Yomi</p>
+                    </div>
+                </a>
+
+                <div class="sidebar">
+                    <a class="menu-item" href="chat.html">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item active">
+                        <span><i class="uil uil-cog"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MIDDLE CONTENT -->
+            <div class="middle">
+                <div class="hero-container">
+                    <img src="asset/VC.png" class="logo" alt="logo" />
+                    <h2 class="text">Settings</h2>
+
+                    <form id="settings-form">
+                        <input type="text" placeholder="Full Name" value="Prof. Yomi" />
+                        <input type="email" placeholder="Email" value="yomi@fuoye.edu.ng" />
+                        <div class="input-group">
+                            <input type="password" id="password" placeholder="New Password" />
+                            <i class="uil uil-eye" id="toggle-password"></i>
+                        </div>
+
+                        <!-- Profile Picture Upload -->
+                        <label for="profile-pic">Change Profile Picture</label>
+                        <input type="file" id="profile-pic" accept="image/*" />
+                        <img id="preview-pic" src="asset/VC.png" alt="Preview" />
+
+                        <!-- Dark Mode Toggle -->
+                        <!-- <label for="theme-toggle">Dark Mode</label>
+                        <input type="checkbox" id="theme-toggle" class="dark-theme" title="Toggle dark mode" /> -->
+
+                        <!-- Submit -->
+                        <button type="submit" class="form-btn">Update Settings</button>
+                        <button type="button" class="form-btn deactivate-btn" id="deactivate-account">
+                            Deactivate Account
+                        </button>
+                    </form>
+
+                    <fieldset style="margin-top: 1rem;">
+                        <legend>Notification Preferences</legend>
+                        <label><input type="checkbox" name="notifications" value="email" checked /> Email Notifications</label><br>
+                        <label><input type="checkbox" name="notifications" value="sms" /> SMS Alerts</label><br>
+                        <label><input type="checkbox" name="notifications" value="push" /> In-App Push</label>
+                    </fieldset>
+
+                    <!-- <div class="toggle">
+                        <a href="chat.html">← Back to Home</a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- OPTIONAL RIGHT SECTION -->
+            <div class="right"></div>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

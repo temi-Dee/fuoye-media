@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="main.css">
+    <title>FUOYE</title>
+  </head>
+  <body>
+
+   <link rel="stylesheet" href="main.css">
+    <title>FUOYE</title>
+  </head>
+  <body>
+
+   <div id="landing-overlay" class="landing">
+      <img src="asset/logo-removebg-preview.png" class="land-logo" alt="">
+      <p class="land-text">Innovation and Character For National Transformation</p>
+    </div>
+
+<div class="hero-container hidden" id="auth-container">
+  <img src="asset/logo-removebg-preview.png" class="logo" alt="">
+    <h2 id="form-title" class="text">Sign Up</h2>
+
+    <form id="auth-form">
+      <input type="text" id="name-field" placeholder="Full Name" required />
+      <input type="email" id="email-field" placeholder="Email" required />
+      <div class="input-group">
+        <input type="password" id="password-field" placeholder="Password" required />
+        <span id="toggle-password" class="uil uil-eye"></span>
+      </div>
+      <button type="submit" class="form-btn">Sign Up</button>
+    </form>
+
+    <form id="login-form" class="hidden">
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button type="submit" class="form-btn">Log In</button>
+      </form>
+
+    <form id="reset-password-form" class="hidden">
+      <input type="email" id="reset-email" placeholder="Enter your email to reset password" required />
+      <button type="submit" class="form-btn">Reset Password</button>
+    </form>
+
+    <div class="toggle">
+      <p id="toggle-text">Already have an account? <a href="#" onclick="showLogin()">Log In</a></p>
+      <p><a href="#" onclick="showReset()">Forgot Password?</a></p>
+    </div>
+  </div>
+    <script src="landing.js"></script>
+  </body>
+</html>

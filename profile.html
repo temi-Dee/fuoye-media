@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | FUOYE</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container">
+            <h2 class="log">FUOYE-Media</h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search profile..." />
+            </div>
+            <div class="create">
+                <div class="profile-photo">
+                    <img src="asset/VC.png" alt="profile" />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- LEFT SIDEBAR -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="asset/VC.png" alt="" />
+                    </div>
+                    <div class="handle">
+                        <h4>Prof. Yomi</h4>
+                        <p class="text-muted">@Yomi</p>
+                    </div>
+                </a>
+
+                <div class="sidebar">
+                    <a class="menu-item" href="chat.html">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item active">
+                        <span><i class="uil uil-user"></i></span>
+                        <h3>Profile</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MIDDLE PROFILE CONTENT -->
+            <div class="middle">
+                <div class="hero-container">
+                    <div class="profile-photo" style="width: 100px; height: 100px;">
+                        <img src="asset/VC.png" alt="Profile Picture" />
+                    </div>
+                    <div class="prof-text">
+                        <h2 class="text">Prof. Yomi</h2>
+                        <p class="text-muted">@Yomi</p>
+                        <p>🎓 Vice Chancellor at FUOYE</p>
+                        <p>📍 Ado-Ekiti, Nigeria</p>
+                        <p>📧 yomi@fuoye.edu.ng</p>
+                        <button class="form-btn" onclick="window.location.href='setting.html'">
+                            <i class="uil uil-edit"></i> Edit Profile
+                        </button>
+                    </div>
+                    
+
+                    <div class="profile-stats">
+                        <div><span>534</span><br>Followers</div>
+                        <div><span>128</span><br>Following</div>
+                        <div><span>42</span><br>Posts</div>
+                    </div>
+                </div>
+
+                <!-- TABS -->
+                <div class="tabs">
+                    <div class="tab active" data-tab="posts">Posts</div>
+                    <div class="tab" data-tab="photos">Photos</div>
+                    <div class="tab" data-tab="about">About</div>
+                </div>
+
+                <!-- TAB CONTENT -->
+                <div class="tab-content active" id="posts">
+                    <div class="feeds">
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo"><img src="asset/DVC2.png" alt="" /></div>
+                                    <div class="ingo">
+                                        <h3>Prof. Yomi</h3>
+                                        <small>2 days ago</small>
+                                    </div>
+                                </div>
+                                <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                            </div>
+                            <div class="photo"><img src="asset/story2.jpg" alt="Post Image"></div>
+                            <div class="caption">
+                                <p><b>Prof. Yomi</b> On a mission to inspire. <span class="harsh-tag">#leadership</span>
+                                </p>
+                            </div>
+                            <div class="comments text-muted">View all 120 comments</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="photos">
+                    <div class="photo-grid">
+                        <img src="asset/story2.jpg" alt="Photo 1">
+                        <img src="asset/background story.jpg" alt="Photo 2">
+                        <img src="asset/story2.jpg" alt="Photo 3">
+                        <img src="asset/background story.jpg" alt="Photo 4">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="about">
+                    <div class="about">
+                        <h4>About Prof. Yomi</h4>
+                        <p><b>Title:</b> Vice Chancellor, FUOYE</p>
+                        <p><b>Education:</b> Ph.D. in Educational Management</p>
+                        <p><b>Interests:</b> Leadership, Innovation, Mentorship, Research</p>
+                        <p><b>Joined:</b> Jan 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTENT (Optional) -->
+            <div class="right"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

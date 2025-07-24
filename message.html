@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUOYE Chat Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container">
+            <h2 class="log">FUOYE-Media</h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search profile..." />
+            </div>
+            <div class="create">
+                <div class="profile-photo">
+                    <img src="asset/VC.png" alt="profile" />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- =========================== left side ============================ -->
+        <div class="left">
+
+            <div class="contacts">
+<a class="profile">
+    <div class="profile-photo">
+        <img src="asset/VC.png" alt="" />
+    </div>
+    <div class="handle">
+        <h4>Prof. Yomi</h4>
+        <p class="text-muted">@Yomi</p>
+    </div>
+</a>
+
+<div class="sidebar">
+    <a class="menu-item" href="chat.html">
+        <span><i class="uil uil-home"></i></span>
+        <h3>Home</h3>
+    </a>
+    <a class="menu-item">
+        <span><i class="uil uil-user"></i></span>
+        <h3>Chats</h3>
+    </a>
+</div>
+                <!-- <h3 class="contacts-title">Chats</h3> -->
+                <div class="contact" onclick="startChat('Isaac Adeyinka')">
+                    <img src="asset/VC.png" class="avatar" alt="Isaac" />
+                    <div class="contact-info">
+                        <h4>Isaac Adeyinka</h4>
+                        <p class="text-muted">Last message preview...</p>
+                    </div>
+                </div>
+                <div class="contact" onclick="startChat('Prof. Olubunmi')">
+                    <img src="asset/DVC2.png" class="avatar" alt="Prof" />
+                    <div class="contact-info">
+                        <h4>Prof. Olubunmi</h4>
+                        <p class="text-muted">Meeting confirmed ✅</p>
+                    </div>
+                </div>
+                <div class="contact" onclick="startChat('David Opeyemi')">
+                    <img src="asset/DVC.png" class="avatar" alt="David" />
+                    <div class="contact-info">
+                        <h4>David Opeyemi</h4>
+                        <p class="text-muted">Thanks for the doc 📎</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================== middle side ============================ -->
+        <div class="middle">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Chat with Isaac Adeyinka</h2>
+                </div>
+
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Example messages -->
+                    <div class="chat-bubble you">Hey, are we still on for the meeting?</div>
+                    <div class="chat-bubble other">Yes, 2 PM as agreed.</div>
+                    <div class="chat-bubble you">Great. See you then!</div>
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message..." />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="data.js"></script>
+</body>
+
+</html>
